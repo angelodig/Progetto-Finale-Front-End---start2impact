@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BTC Tracker | Angelo Di Gianfilippo | start2impact</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Btc Info -->
+    <div class="rectangle mainInfotext">
+      <img src="icons/btc-logo.png" alt="btc logo" width="100">
+      <h2>Record the bitcoin purchased and track their value!</h2>
+      <div id="btcInfo">
+        <h3>Bitcoin price: <span id="btcPrice"></span> $</h3>
+        <h3>24h: <span id="h24PriceChange"></span> </h3>
+      </div>
+    </div>
+
+    <!-- Form Add Transaction -->
+    <form id="transactionForm" class="rectangle transactionFormText" action="index.html" method="post">
+      <fieldset id="transactionFormFieldset">
+        <h1>Add or subtract bitcoin</h1>
+        <h2>Amount: </h2>
+        <input type="number" name="bitcoinAmount" id="bitcoinAmountInput" value="" placeholder="0.000000">
+      </fieldset>
+      <fieldset>
+        <button id="buttonSave" type="button" name="">Save</button>
+      </fieldset>
+    </form>
+
+    <!-- Your balance -->
+    <div class="rectangle mainInfotext">
+       <h1>Your bitcoin: <span id="yourBitcoin"></span> </h1>
+       <h1>Current value: <span id="currentValue" style="color:green"></span> </h1>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="script/requestApi.js"></script>
+    <script type="text/javascript" src="script/addTransaction.js"></script>
+
+  </body>
+</html>

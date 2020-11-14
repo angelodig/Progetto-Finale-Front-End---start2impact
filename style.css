@@ -1,0 +1,68 @@
+* {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #353A47;
+}
+
+a {
+  text-decoration: none; /* remove underline */
+  padding: 2px;
+}
+
+.rectangle {
+  border-radius: 20px;
+  position: relative;
+  width: 70%;
+  height: 30%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #FFFFFF;
+}
+
+/* Main Info*/
+.mainInfotext {
+  color: #000000;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* Transaction Form */
+fieldset {
+  border: none;
+}
+
+input[type=number] {
+  font-size: 4vw;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+}
+
+.transactionFormText{
+  color: #000000;
+  text-align: center;
+}
+
+#transactionForm {
+  background: #FFFFFF;
+}
+
+#buttonSave {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
